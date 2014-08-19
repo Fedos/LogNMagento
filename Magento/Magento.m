@@ -67,6 +67,7 @@ NSString * const FAILED_SESSION = @"NULL";
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 	dispatch_release(session_queue);
 	dispatch_release(session_group);
+    [super dealloc];
 }
 
 #pragma mark - Cache
